@@ -14,6 +14,7 @@ class DiabetesPredictor:
 
     def predict_single_record(self, prediction_input):
         logging.debug(prediction_input)
+        # Loading the model
         if self.model is None:
             try:
                 model_repo = os.environ['MODEL_REPO']

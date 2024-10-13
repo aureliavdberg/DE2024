@@ -15,4 +15,5 @@ fi
 pip install --upgrade setuptools
 pip install -r requirements_dev.txt
 
+# Used for running the tests, set log in particular format with path to the tests.
 python3 -m pytest --junitxml=test_log.xml ./tests

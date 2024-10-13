@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 # A decorator used to tell the application
 # which URL is associated function
+#  /checkdiabetes need to be added to make the page work
 @app.route('/checkdiabetes', methods=["GET", "POST"])
 def check_diabetes():
     if request.method == "GET":
